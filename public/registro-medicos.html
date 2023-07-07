@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Medicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HealthyLife Clinic Medicos</h1>
+    </header>
+    <main>
+        <form action="./guardar-medicos" method="post">
+            <h2>REGISTRO DE MEDICOS</h2>
+            <label for="cedula">Cedula del medico:<span> *</span></label>
+            <input type="number" id="cedula" name="cedula" required><br>
+            <label for="nombre">Nombre del medico:<span> *</span></label>
+            <input type="text" id="nombres" name="nombres" required><br>
+            <label for="apellido">Apellido del medico:<span> *</span></label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            <label for="especidalidad">Especialidad del medico:<span> *</span></label>
+            <select id="especidalidad" name="especidalidad" required>
+                <option value="">-------------- Seleccione la Especialidad -------------</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Dermatologia">Dermatología</option>
+                <option value="Odontologia">Odontología</option>
+                <option value="Cardiologia">Cardiología</option>
+                <option value="Rehabilitacion fisica">Rehabilitacion Fisica</option>
+                <option value="Radiologia">Radiología</option>
+                <option value="Medicina Interna">Medicina Interna</option>
+                <option value="Psicologia">Psicología</option>
+            </select><br>
+            <label for="consultorio">Consultorio del medico:<span> *</span></label>
+            <input type="number" id="consultorio" name="consultorio" required><br>
+            <label for="correo">Correo del medico:<span> *</span></label>
+            <input type="text" id="correo" name="correo" required><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
